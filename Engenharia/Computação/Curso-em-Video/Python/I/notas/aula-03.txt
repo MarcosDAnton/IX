@@ -1,0 +1,24 @@
+Instalando o Python3 e o IDLE
+
+
+* Como funciona o Python ou qualquer linguagem de programação?
+
+ Suponha-se que eu quero conversar com alguém de uma língua estrangeiro, por exemplo 
+o meu "Olá" é representado de outra forma para ela e através de um dicionário ou interprete do idioma 
+afim de interpretar a minha fala.
+
+* Como instalar?
+
+ É só ir na página oficial e executar o arquivo conforme a versão, 
+ outros sistemas op. como Linux e Mac, eles já possuem nativamente o Python.
+
+* Como usar inicialmente?
+
+ Pode utilizar ele pelo CMD mesmo com o seu software interpretador instalado, 
+ escrevendo "python" e então vem os comandos básicos:
+
+  print("Olá, Mundo!")
+  operações de soma, subtração, ...
+  ...
+
+  até sentir que uma IDLE faz falta para desenvolvimentos mais robustos.
