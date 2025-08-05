@@ -1,0 +1,17 @@
+Tipos Primitivos e Saída de Dados
+
+As linguagens de programação em geral e a Python tem no total de 4 tipos 
+primitivos de dados:
+ 
+ - int(1, 7, 8, 9, 10, ...)
+ - float(-1.0, 4.6, 4.7, 8.9, ...)
+ - bool(True, False)
+ - str('Oi', "8.9", "", '')
+
+E os especiais:
+ - .format(var) # puxa uma var para uma {} dentro do print
+ - type() # mostra o tipo utilizado
+ - var.isnumeric() # verifica se a variável é numérica
+ -var.isalpha() # verifica se a variável é letra
+ -var.isalnum() # verifica se a variável é alfanumérica
+ -var.isupper() # verifica se a variável é maiusculo
