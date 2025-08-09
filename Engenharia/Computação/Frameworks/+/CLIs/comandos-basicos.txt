@@ -1,0 +1,23 @@
+md "nome_da_pasta" (criação de uma pasta)
+
+cd TAB (Seleciona a pasta desejada)
+
+cd .. ou . (Volta dois ou um nível de pasta)
+
+start <nome_da_pasta> ou <arquivo>  (Abre a pasta ou arquivo)
+
+
+dir (por si só lista apenas os arquivos e pastas que não são ocultos)
+
+dir /a (lista todos os arquivos e pastas, incluindo os ocultos)
+
+dir /l (lista o conteúdo com detalhes)
+
+dir /a /l (lista todos os arquivos e pastas com detalhes)
+
+dir <nome_da_pasta> 
+(lista o conteúdo de uma pasta específica, fornecendo o nome da pasta como argumento)
+
+date (mostra a semana, dia e horário)
+
+ipconfig (mostra as informações de rede do dispositivo)
