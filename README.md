@@ -1,2 +1,2 @@
 # Lunix
-Esta pasta está destinada a conteúdos de estudos e treinamentos online sobre quaisquer ciências.
+Esta pasta está destinada a conteúdos de trabalhos, estudos e treinamentos físicos e digitais sobre qualquer coisa.
