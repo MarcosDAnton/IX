@@ -1,0 +1,13 @@
+* O que é o CSS? 
+   
+  É a linguagem de estilo que define como os elementos HTML devem ser apresentados e em geral os aspectos visuais de uma página web, também conhecida como Cascading Style Sheets ou Folhas de Estilos em Cascata.
+
+* Quem desenvolveu?
+
+ Foi criado e desenvolvido pelo norueguês Håkon Wium Lie em 1994, enquanto trabalhava no CERN com Tim Berners-Lee.
+
+* Fontes 
+
+ W3Schools [https://www.w3schools.com/css/]
+
+ MDN Web Docs [https://developer.mozilla.org/pt-BR/docs/Web/CSS]
