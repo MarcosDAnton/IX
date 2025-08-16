@@ -1,0 +1,5 @@
+Algoritmo Escreva {
+
+  escreva ("Olá, Mundo!")
+
+}

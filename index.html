@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="./+/favicon.ico" type="image/x-icon">
   <title>Lunix</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
@@ -14,47 +14,263 @@
 </head>
 <body class="min-h-screen flex flex-col items-center p-6" style="background: #02020c;">
 
-  <h1 class="text-3xl font-bold mb-8 text-gray-800"><a href="./index.html"><img src="./+/lunix-removebg-preview.png" width="300"></a></h1>
+<!-- Logo -->  
 
-  <p>Esta pasta / fichário está destinada a conteúdos de trabalhos, estudos e treinamentos físicos e digitais sobre qualquer coisa.</p>
+<h1 class="text-3xl font-bold mb-8 text-gray-800"><a href="./index.html"><img src="./+/lunix-removebg-preview.png" width="300"></a></h1>
 
-  <div><a href="https://drive.google.com/drive/folders/1yD_S8rj4T0plGo-STVCGEIPmVg5-ZJJH?lfhs=2" target="_blank">Google Drive</a></div>
+<!-- Descrição do Repositório -->
 
-  <br><br><br>
+<p>Esta página está destinada a conteúdos de trabalhos, estudos e treinamentos físicos e digitais sobre qualquer coisa.</p>
 
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-6xl">
+  
+<br><br><br>
+
+
+
+<!-- Sessões -->
+
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-6xl">
+
 
     <!-- ESTUDOS -->
-    <div class="bg-white rounded-2xl shadow-lg p-6">
-      <h2 class="text-xl font-semibold text-green-600 mb-4">🧩 Estudos</h2>
-      <ul class="space-y-2 text-gray-700">
-        <li>• <a href="../Estudos/+/">+</a></li>
-        <li>• <a href="../Estudos/Engenhosos/">Engenhosos</a></li>
-        <li>• <a href="../Estudos/Sociais/">Sociais</a></li>
-      </ul>
-    </div>
+<div class="bg-white rounded-2xl shadow-lg p-6">
+  <h2 class="text-xl font-semibold text-green-600 mb-4">🧩 Estudos</h2>
+  <ul class="space-y-5 text-gray-700">
 
-    <!-- TRABALHOS -->
-    <div class="bg-white rounded-2xl shadow-lg p-6">
-      <h2 class="text-xl font-semibold text-green-600 mb-4">💼 Trabalhos</h2>
-      <ul class="space-y-2 text-gray-700">
-        <li>• <a href="../Trabalhos/+/">+</a></li>
-        <li>• <a href="../Trabalhos/Empregos/">Empregos</a></li>
-        <li>• <a href="../Trabalhos/Projetos/">Projetos</a></li>
+
+    <!-- Item + -->
+    <li>
+      <button onclick="toggleDropdown('estudo-mais')" 
+              class="flex justify-between items-center w-full">
+        <span id="icon-estudo-mais">▼</span><a href="./Estudos/+/">+</a> 
+      </button>
+      <ul id="estudo-mais" class="ml-6 mt-2 hidden">
+        <li><a href="./Estudos/+/Naturais/">Naturais</a></li>
+        <li><a href="./Estudos/+/Exatos/">Exatos</a></li>
+        <li><a href="./Estudos/+/Humanos/">Humanos</a></li>
+        <li><a href="./Estudos/+/Agrarios/">Agrários</a></li>
+        <li><a href="./Estudos/+/Linguisticos/">Linguísticos</a></li>
       </ul>
-    </div>
+    </li>
+
+
+    <!-- Item Engenhosos -->
+    <li>
+      <button onclick="toggleDropdown('estudo-engenhosos')" 
+              class="flex justify-between items-center w-full">
+        <span id="icon-estudo-engenhosos">▼</span><a href="./Estudos/Engenhosos/">Engenhosos</a> 
+      </button>
+      <ul id="estudo-engenhosos" class="ml-6 mt-2 hidden">
+        <li><a href="https://alunos.cefet-rj.br/aluno/login.action?error=" target="_blank">CEFET/RJ</a> e <a href="https://teams.microsoft.com/l/channel/19%3AQqeR3R-h6MCLTmlAeI-RRG6imG5N5zrcLYVC0OPL9Ts1%40thread.tacv2/General?groupId=a64c69a7-59c0-4284-bca3-d638fdac0359&tenantId=8eeca404-a47d-4555-a2d4-0f3619041c9c" target="_blank">Teams</a></li>
+        <li><a href="https://www.dio.me/" target="_blank">DIO.ME</a></li>
+      </ul>
+    </li>
+
+
+
+    <!-- Item Sociais -->
+    <li>
+      <button onclick="toggleDropdown('estudo-sociais')" 
+              class="flex justify-between items-center w-full">
+         <span id="icon-estudo-sociais">▼</span><a href="./Estudos/Sociais/">Sociais</a> 
+      </button>
+      <ul id="estudo-sociais" class="ml-6 mt-2 hidden">
+        <li><a href="./Estudos/Sociais/CreditoEMercado.pdf" target="_blank">Credito & Mercado</a></li>
+      </ul>
+    </li>
+
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <!-- TRABALHOS -->
+   <div class="bg-white rounded-2xl shadow-lg p-6">
+  <h2 class="text-xl font-semibold text-green-600 mb-4">💼 Trabalhos</h2>
+  <ul class="space-y-5 text-gray-700">
+
+
+    <!-- Item + -->
+    <li>
+      <button onclick="toggleDropdown('trabalhos-mais')" 
+              class="flex justify-between items-center w-full">
+        <span id="icon-trabalhos-mais">▼</span><a href="./Trabalhos/+/">+</a> 
+      </button>
+      <ul id="trabalhos-mais" class="ml-6 mt-2 hidden">
+        <li><a href="./Trabalhos/+/Ciencias/">Ciências</a></li>
+        <li><a href="./Trabalhos/+/Pesquisas/">Pesquisas</a></li>
+      </ul>
+    </li>
+
+
+    <!-- Item Empregos -->
+    <li>
+      <button onclick="toggleDropdown('trabalhos-empregos')" 
+              class="flex justify-between items-center w-full">
+        <span id="icon-tabalhos-empregos">▼</span><a href="./Estudos/Engenhosos/">Empregos</a> 
+      </button>
+      <ul id="trabalhos-empregos" class="ml-6 mt-2 hidden">
+        <li><a href="https://br.fiverr.com/" target="_blank">Friver</a> e <a href="https://teams.microsoft.com/l/channel/19%3AQqeR3R-h6MCLTmlAeI-RRG6imG5N5zrcLYVC0OPL9Ts1%40thread.tacv2/General?groupId=a64c69a7-59c0-4284-bca3-d638fdac0359&tenantId=8eeca404-a47d-4555-a2d4-0f3619041c9c" target="_blank">Teams</a></li>
+        <li><a href="https://br.indeed.com/?from=gnav-homepage" target="_blank">Indeed</a></li>
+      </ul>
+    </li>
+
+
+
+    <!-- Item Projetos -->
+    <li>
+      <button onclick="toggleDropdown('trabalhos-projetos')" 
+              class="flex justify-between items-center w-full">
+         <span id="icon-trabalhos-projetos">▼</span><a href="./Trabalhos/Projetos/">Projetos</a> 
+      </button>
+      <ul id="trabalhos-projetos" class="ml-6 mt-2 hidden">
+        <li><a href="https://github.com/" target="_blank">GitHub</a></li>
+        <li><a href="https://www.canva.com/" target="_blank">Canva</a></li>
+      </ul>
+    </li>
+
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- TREINOS -->
-    <div class="bg-white rounded-2xl shadow-lg p-6">
-      <h2 class="text-xl font-semibold text-green-600 mb-4">🌱 Treinos</h2>
-      <ul class="space-y-2 text-gray-700">
-         <li>• <a href="../Treinos/+/">+</a></li>
-        <li>• <a href="../Treinos/Estudantis/">Estudantis</a></li>
-        <li>• <a href="../Treinos/Marciais/">Marciais</a></li>
-      </ul>
-    </div>
+      <div class="bg-white rounded-2xl shadow-lg p-6">
+  <h2 class="text-xl font-semibold text-green-600 mb-4">🌱 Treinos</h2>
+  <ul class="space-y-5 text-gray-700">
 
-  </div>
+
+    <!-- Item + -->
+    <li>
+      <button onclick="toggleDropdown('treinos-mais')" 
+              class="flex justify-between items-center w-full">
+        <span id="icon-trabalhos-mais">▼</span><a href="./Treinos/+/">+</a> 
+      </button>
+      <ul id="treinos-mais" class="ml-6 mt-2 hidden">
+        <li><a href="./Treinos/+/Musicais/">Musicais</a></li>
+      </ul>
+    </li>
+
+
+    <!-- Item Estudantis -->
+    <li>
+      <button onclick="toggleDropdown('treinos-estudantis')" 
+              class="flex justify-between items-center w-full">
+        <span id="icon-treinos-estudantis">▼</span><a href="./Treinos/Estudantis/">Estudantis</a> 
+      </button>
+      <ul id="treinos-estudantis" class="ml-6 mt-2 hidden">
+        <li><a href="https://alunos.cefet-rj.br/aluno/login.action?error=" target="_blank">CEFET/RJ</a> e <a href="https://teams.microsoft.com/l/channel/19%3AQqeR3R-h6MCLTmlAeI-RRG6imG5N5zrcLYVC0OPL9Ts1%40thread.tacv2/General?groupId=a64c69a7-59c0-4284-bca3-d638fdac0359&tenantId=8eeca404-a47d-4555-a2d4-0f3619041c9c" target="_blank">Teams</a></li>
+        <li><a href="https://www.dio.me/" target="_blank">DIO.ME</a></li>
+      </ul>
+    </li>
+
+
+
+    <!-- Item Marciais -->
+    <li>
+      <button onclick="toggleDropdown('treinos-marciais')" 
+              class="flex justify-between items-center w-full">
+         <span id="icon-treinos-marciais">▼</span><a href="./Treinos/Marciais/">Marciais</a> 
+      </button>
+      <ul id="treinos-marciais" class="ml-6 mt-2 hidden">
+        <li><a href="./Treinos/Marciais/Karate-Em-Casa/Quadro.png">Karatê Em Casa</a></li>
+        <li><a href="./Treinos/Marciais/Projeto-Agita-Petropolis-Karate/">Projeto Agita Petrópolis Karatê <a href="https://www.petropolis.rj.gov.br/pmp/index.php/noticias/item/22432-agita-petropolis-ultrapassa-dois-mil-alunos-e-abre-novo-nucleo" target="_blank">[Site]</a></a></li>
+      </ul>
+    </li>
+
+  </ul>
+      </div>
+
+
+
+
+
+
+
+
+
+<br><br><br>
+
+
+
+
+<div> Extensões: 
+     <a href="https://drive.google.com/drive/folders/1yD_S8rj4T0plGo-STVCGEIPmVg5-ZJJH?lfhs=2" target="_blank"><img src="https://png.pngtree.com/png-vector/20230817/ourmid/pngtree-google-drive-icon-vector-png-image_9183273.png" width="100"></a>
+</div>
+
+
+
+
+
+
+
+
+
+  <!-- Script Responsável pelo Dropdown -->
+
+  <script>
+  function toggleDropdown(id) {
+    const list = document.getElementById(id);
+    const icon = document.getElementById("icon-" + id);
+
+    list.classList.toggle("hidden");
+
+    // muda a setinha
+    if (list.classList.contains("hidden")) {
+      icon.textContent = "▼";
+    } else {
+      icon.textContent = "▲";
+    }
+  }
+</script>
 
 </body>
 </html>
