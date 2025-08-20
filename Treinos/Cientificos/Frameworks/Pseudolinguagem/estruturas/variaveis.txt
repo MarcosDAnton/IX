@@ -1,0 +1,26 @@
+#=========================================================
+Entrada:
+
+Algortimo Variaveis{
+
+   inteiro: numero_inteiro;
+   real: numero_real;
+   caractere: texto;
+   logico: valor_logico;
+
+   leia(numero_inteiro)  # se for valor inteiro é verdade
+   leia(numero_real)  # se for valor real é verdade 
+   leia(caractere) # se for do tipo texto ou 'string' é verdade 
+   leia(valor_logico) # sempre será verdade neste caso
+
+
+}
+
+#============================================================
+Saída:
+ 
+  _  # é um valor inteiro 
+  _  # é um valor real 
+  _  # é um texto 
+  _  # sempre será verdade neste caso
+  

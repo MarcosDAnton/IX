@@ -1,0 +1,17 @@
+#=====================================================================
+Entrada:
+
+Algoritmo Leia {
+
+    leia("Qual o seu nome?")
+    leia("Qual a sua idade?") 
+    leia("Qual o seu peso?")   
+
+}
+
+#========================================================================
+Saída:
+
+ Qual o seu nome? _ 
+ Qual a sua idade? _ 
+ Qual o seu peso? _
