@@ -5,58 +5,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="./+/favicon.ico" type="image/x-icon">
   <title>Lunix</title>
-  <script src="https://cdn.tailwindcss.com"></script>
   <!-- Estilo da Página -->
+  <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    p, a, div{
+    p, div{
       color: whitesmoke;
     }
   </style>
 </head>
-<body class="min-h-screen flex flex-col items-center p-6" style="background: black;">
+<body class="flex flex-col items-center" style="background: black;">
 
 <!-- Logo -->  
-<h1 class="text-3xl font-bold mb-8 text-gray-800"><a href="./index.html"><img src="./+/lunix-removebg-preview.png" width="300"></a></h1>
+<a href="./index.html"><img src="./+/lunix-removebg-preview.png" width="300" class="rounded-full"></a>
+
+<br><br><br>
+
+<!-- Sobre o Criador -->
+<p class="text-2xl"><a href="./+/MarcosDAnton/MarcosDAnton.html" target="_blank"><img src="./+/MarcosDAnton/Perfil-MarcosDAnton.jpeg" width="170px" class="rounded-full"></a></p>
+
+<br><br><br>
 
 <!-- Descrição do Repositório -->
-<p>Esta página está destinada a conteúdos de trabalhos, estudos e treinamentos físicos e digitais sobre qualquer coisa.</p>
+<p>Esta página é o meu fichário de portifólios em afazeres de estudos, trabalhos e treinos em mídias físicas e digitais com contéudos públicos ou privados sobre qualquer coisa.</p>
 
-  
 <br><br><br>
 
 <!-- Sessões -->
 <div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-6xl">
 
 
-    <!-- ======================================================================= ESTUDOS ========================================================================= -->
+<!-- ======================================================================= ESTUDOS ========================================================================= -->
 <div class="bg-white rounded-2xl shadow-lg p-6">
-  <h2 class="text-xl font-semibold text-green-600 mb-4">🧩 Estudos</h2>
+  <h2 class="text-xl font-semibold text-green-600 mb-4"><a href="./Estudos/+/" target="_blank">🧩 Estudos</a></h2>
   <ul class="space-y-5 text-gray-700">
-
-
-    <!-- + -->
-    <li>
-      <button onclick="toggleDropdown('estudo-mais')" 
-              class="flex justify-between items-center w-full">
-        <span id="icon-estudo-mais">▼</span><a href="./Estudos/+/">+</a> 
-      </button>
-      <ul id="estudo-mais" class="ml-6 mt-2 hidden">
-        <li><a href="./Estudos/+/Naturais/">Naturais</a></li>
-        <li><a href="./Estudos/+/Exatos/">Exatos</a></li>
-        <li><a href="./Estudos/+/Humanos/">Humanos</a></li>
-        <li><a href="./Estudos/+/Agrarios/">Agrários</a></li>
-        <li><a href="./Estudos/+/Linguisticos/">Linguísticos</a></li>
-      </ul>
-    </li>
 
 
     <!-- Item Engenhosos -->
     <li>
-      <button onclick="toggleDropdown('estudo-engenhosos')" class="flex justify-between items-center w-full">
-        <span id="icon-estudo-engenhosos">▼</span><a href="./Estudos/Engenhosos/">Engenhosos</a> 
+      <button onclick="toggleDropdown('Engenhosos')" class="flex justify-between items-center w-full">
+        <span id="icon-Engenhosos">▼</span><a href="./Estudos/Engenhosos/">Engenhosos</a> 
       </button>
-      <ul id="estudo-engenhosos" class="ml-6 mt-2 hidden">
-        <li><a href="https://alunos.cefet-rj.br/aluno/login.action?error=" target="_blank">CEFET/RJ</a> [<a href="https://teams.microsoft.com/l/channel/19%3AQqeR3R-h6MCLTmlAeI-RRG6imG5N5zrcLYVC0OPL9Ts1%40thread.tacv2/General?groupId=a64c69a7-59c0-4284-bca3-d638fdac0359&tenantId=8eeca404-a47d-4555-a2d4-0f3619041c9c" target="_blank">Teams</a> + <a href="https://e-computacao.com.br/" target="_blank">Site</a> + <a href="https://outlook.office.com/mail/" target="_blank">E-mail</a>] [Físico e Digital]</li>
+      <ul id="Engenhosos" class="ml-6 mt-2 hidden">
+        <li><a href="https://alunos.cefet-rj.br/aluno/login.action?error=" target="_blank">CEFET/RJ</a> [<a href="https://teams.microsoft.com/l/channel/19%3AQqeR3R-h6MCLTmlAeI-RRG6imG5N5zrcLYVC0OPL9Ts1%40thread.tacv2/General?groupId=a64c69a7-59c0-4284-bca3-d638fdac0359&tenantId=8eeca404-a47d-4555-a2d4-0f3619041c9c" target="_blank">Teams</a> + <a href="https://e-computacao.com.br/" target="_blank">Site</a> + <a href="https://outlook.office.com/mail/" target="_blank">E-mail</a>] [Física e Digital]</li>
         <!--<li><a href="https://www.dio.me/" target="_blank">DIO.ME </a></li>-->
       </ul>
     </li>
@@ -100,29 +90,18 @@
 
 
   
-    <!-- ============================================================================= TREINOS ============================================================ -->
-      <div class="bg-white rounded-2xl shadow-lg p-6">
-  <h2 class="text-xl font-semibold text-green-600 mb-4">🌱 Treinos</h2>
+<!-- ============================================================================= TREINOS ============================================================ -->
+<div class="bg-white rounded-2xl shadow-lg p-6">
+  <h2 class="text-xl font-semibold text-green-600 mb-4"><a href="./Treinos/+/" target="_blank">🌱 Treinos</a></h2>
   <ul class="space-y-5 text-gray-700">
-
-
-    <!-- + -->
-    <li>
-      <button onclick="toggleDropdown('treinos-mais')" class="flex justify-between items-center w-full">
-        <span id="icon-trabalhos-mais">▼</span><a href="./Treinos/+/">+</a> 
-      </button>
-      <ul id="treinos-mais" class="ml-6 mt-2 hidden">
-        <li><a href="./Treinos/+/Musicais/">Musicais</a></li>
-      </ul>
-    </li>
 
 
     <!-- Item Científicos -->
     <li>
-      <button onclick="toggleDropdown('treinos-cientificos')" class="flex justify-between items-center w-full">
-        <span id="icon-treinos-cientificos">▼</span><a href="./Treinos/Cientificos/">Científicos</a> 
+      <button onclick="toggleDropdown('T-Cientificos')" class="flex justify-between items-center w-full">
+        <span id="icon-T-Cientificos">▼</span><a href="./Treinos/Cientificos/">Científicos</a> 
       </button>
-      <ul id="treinos-cientificos" class="ml-6 mt-2 hidden">
+      <ul id="T-Cientificos" class="ml-6 mt-2 hidden">
          <li><a href="./Treinos/Cientificos/Frameworks/">Frameworks [Digital]</a></li>
          <br>
          <li><a href="https://www.youtube.com/watch?v=ep2DJfDtEfs" target="_blank">Matemática Brain Station</a> <a href="./Treinos/Cientificos/Matemática - Brain Station - Para Práticar Cronologicamente + I.A/lvl-3-Division.png" target="_blank">[Para Práticar + I.A] [Digital]</a></li>
@@ -137,18 +116,18 @@
 
     <!-- Item Corporais -->
     <li>
-      <button onclick="toggleDropdown('treinos-Corporais')" class="flex justify-between items-center w-full">
-         <span id="icon-treinos-Corporais">▼</span><a href="./Treinos/Corporais/">Físicos</a> 
+      <button onclick="toggleDropdown('Corporais')" class="flex justify-between items-center w-full">
+         <span id="icon-Corporais">▼</span><a href="./Treinos/Corporais/">Corporais</a> 
       </button>
-      <ul id="treinos-Corporais" class="ml-6 mt-2 hidden">
-        <li><a href="./Treinos/Corporais/Karate-Em-Casa/Quadro.png">Karatê Em Casa</a>  - <a href="https://www.canva.com/" target="_blank">[Editar no Canva]</a> [Físico] </li>
+      <ul id="Corporais" class="ml-6 mt-2 hidden">
+        <li><a href="./Treinos/Corporais/Karate-Em-Casa/Quadro.png">Karatê Em Casa</a>  - <a href="https://www.canva.com/" target="_blank">[Editar no Canva]</a> [Física] </li>
         <br>
-        <li><a href="./Treinos/Corporais/Projeto-Agita-Petropolis-Karate/">Projeto Agita Petrópolis Karatê</a>  <a href="https://www.petropolis.rj.gov.br/pmp/index.php/noticias/item/22432-agita-petropolis-ultrapassa-dois-mil-alunos-e-abre-novo-nucleo" target="_blank">[Site]</a> [Físico]</li>
+        <li><a href="./Treinos/Corporais/Projeto-Agita-Petropolis-Karate/">Projeto Agita Petrópolis Karatê</a>  <a href="https://www.petropolis.rj.gov.br/pmp/index.php/noticias/item/22432-agita-petropolis-ultrapassa-dois-mil-alunos-e-abre-novo-nucleo" target="_blank">[Site]</a> [Física]</li>
       </ul>
     </li>
 
   </ul>
-      </div>
+</div>
 
 
 
@@ -174,23 +153,14 @@
       
 
 
-  <!-- ===================================================================== TRABALHOS ===================================================================== -->
-   <div class="bg-white rounded-2xl shadow-lg p-6">
-  <h2 class="text-xl font-semibold text-green-600 mb-4">💼 Trabalhos</h2>
+<!-- ===================================================================== TRABALHOS ===================================================================== -->
+<div class="bg-white rounded-2xl shadow-lg p-6">
+  <h2 class="text-xl font-semibold text-green-600 mb-4"><a href="./Trabalhos/+/" target="_blank">💼 Trabalhos</a></h2>
   <ul class="space-y-5 text-gray-700">
 
+    <!-- Item Científicos-->
 
-    <!-- + -->
-    <li>
-      <button onclick="toggleDropdown('trabalhos-mais')" class="flex justify-between items-center w-full">
-        <span id="icon-trabalhos-mais">▼</span><a href="./Trabalhos/+/">+</a> 
-      </button>
-      <ul id="trabalhos-mais" class="ml-6 mt-2 hidden">
-        <li><a href="./Trabalhos/+/Ciencias/">Científicos</a></li>
-        <li><a href="./Trabalhos/+/Pesquisas/">Investigativos</a></li>
-      </ul>
-    </li>
-
+    <!-- Item Investigativos-->
 
     <!-- Item Empregaticios
     <li>
@@ -209,13 +179,12 @@
     </li>
      -->
 
-
     <!-- Item Projetuais -->
     <li>
-      <button onclick="toggleDropdown('trabalhos-Projetuais')" class="flex justify-between items-center w-full">
-         <span id="icon-trabalhos-Projetuais">▼</span><a href="./Trabalhos/Projetuais/">Projetuais</a> 
+      <button onclick="toggleDropdown('Projetuais')" class="flex justify-between items-center w-full">
+         <span id="icon-Projetuais">▼</span><a href="./Trabalhos/Projetuais/">Projetuais</a> 
       </button>
-      <ul id="trabalhos-Projetuais" class="ml-6 mt-2 hidden">
+      <ul id="Projetuais" class="ml-6 mt-2 hidden">
         <li><a href="https://github.com" target="_blank">GitHub</a> [<a href="https://github.com/MarcosDAnton/SpacInk" target="_blank">SpacInk</a>]</li>
         <br>
         <li><a href="https://www.canva.com/" target="_blank">Canva [Design + Edições de Vídeos] </a></li>
@@ -226,19 +195,6 @@
 
   </ul>
 </div>
-
-
-
-
-<br><br><br><br><br>
-
-
-
-
-<div class="text-center"> Extensões: 
-     <a href="https://drive.google.com/drive/folders/1yD_S8rj4T0plGo-STVCGEIPmVg5-ZJJH?lfhs=2" target="_blank"><img src="https://png.pngtree.com/png-vector/20230817/ourmid/pngtree-google-drive-icon-vector-png-image_9183273.png" width="100"></a>
-</div>
-
 
 
 
@@ -266,4 +222,11 @@
 </script>
 
 </body>
+
+
+<!-- Extensões-->
+
+  <p class="align-content-center"><a href="https://drive.google.com/drive/folders/1yD_S8rj4T0plGo-STVCGEIPmVg5-ZJJH?lfhs=2" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Google_Drive_icon_%282020%29.svg/1200px-Google_Drive_icon_%282020%29.svg.png" style="width: 12%;"></a></p>
+
+
 </html>
