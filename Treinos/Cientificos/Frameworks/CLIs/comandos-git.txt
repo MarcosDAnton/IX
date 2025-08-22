@@ -11,6 +11,7 @@ git clone link-do-repositorio
 git add. 
 git commit -m "data-do-commit" 
 git push origin main ou outra-branch
+git fetch (trás o contéudo commitado direto no GitHub para o clone)
 
 (Essa é a sequência para selecionar todos os arquivos de um repositório e enviar do local para o GitHub)
 
