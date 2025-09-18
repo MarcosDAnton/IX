@@ -30,6 +30,10 @@
 
 <br><br><br>
 
+<p class="text-center">OBS: Desmarcar tudo no fim do dia!</p>
+
+<br>
+
 
 
 <!--======================================================================== SESSÕES =================================================================== -->
@@ -46,11 +50,24 @@
   <h2 class="text-xl text-center font-semibold text-green-600 mb-4"><a href="./Estudos/+/" target="_blank"># Estudos</a></h2>
   <ul class="space-y-5 text-gray-700">
 
-        <li><a href="./Estudos/CEFET-RJ-Eng-de-Computação/CEFET-RJ.html" target="_blank">CEFET/RJ - Engenharia de Computação [Híbrido]</a></li>
-        <br>
-        <li><a href="https://app.promilitares.com.br/app/curso/pm-nivelamento/materias/matematica/48868" target="_blank">Promilitares - Nivelamento - Módulo: Matemática [Híbrido]</a></li>
-        <br>
-        <li><a href="https://app.promilitares.com.br/app/curso/pm-nivelamento/materias/fisica" target="_blank">Promilitares - Nivelamento - Módulo: Física [Híbrido]</a></li>
+  <li>
+    <input type="checkbox" id="estudos-cefet">
+    <a href="./Estudos/CEFET-RJ-Eng-de-Computação/CEFET-RJ.html" target="_blank">CEFET/RJ - Engenharia de Computação [Híbrido]</a>
+  </li>
+        
+  <br>
+        
+  <li>
+    <input type="checkbox" id="estudos-promilitares-mat">
+    <a href="https://app.promilitares.com.br/app/curso/pm-nivelamento/materias/matematica/48868" target="_blank">Promilitares - Nivelamento - Módulo: Matemática [Híbrido]</a>
+  </li>
+
+   <br>
+
+   <li>
+     <input type="checkbox" id="estudos-promilitares-fis">
+     <a href="https://app.promilitares.com.br/app/curso/pm-nivelamento/materias/fisica" target="_blank">Promilitares - Nivelamento - Módulo: Física [Híbrido]</a>
+   </li>
     
   </ul>
 </div>
@@ -83,17 +100,33 @@
   <h2 class="text-xl text-center font-semibold text-green-600 mb-4"><a href="./Treinos/+/" target="_blank"># Treinos</a></h2>
   <ul class="space-y-5 text-gray-700">
 
-         <li><a href="https://www.youtube.com/watch?v=ep2DJfDtEfs" target="_blank">Matemática Brain Station</a> -
-             <a href="./Treinos/Matemática - Brain Station - Para Práticar Cronologicamente + I.A/lvl-7-Percentages.png" target="_blank">Lvl+ Atual [Híbrido]</a></li>
-           <br>
-         <li><a href="https://www.duolingo.com/learn?utm_source=pwa_launch" target="_blank">Duolingo - Inglês [Digital] </a></li>
-           <br>
-         <!--<li><a href="https://zty.pe/" target="_blank">Z-Type Game [Lvl.11+] [Digital] </a></li> -->
-           <br>
-         <li><a href="./Treinos/Treino Pessoal/Quadro.png" target="_blank">Treino Pessoal [Segundas, Quartas e Sextas]</a>  - <a href="https://www.canva.com/" target="_blank">[Editar]</a> [Híbrido] </li>
-           <br>
-         <li><a href="./Treinos/Projeto-Agita-Petropolis-Karate/" target="_blank">Projeto Agita Petrópolis Karatê [Quartas e Sextas 18h00]</a> [Físico]</li>
+     <li>
+       <input type="checkbox" id="treinos-mat-brain">
+       <a href="https://www.youtube.com/watch?v=ep2DJfDtEfs" target="_blank">Matemática Brain Station</a> -
+       <a href="./Treinos/Matemática - Brain Station - Para Práticar Cronologicamente + I.A/lvl-7-Percentages.png" target="_blank">Lvl+ Atual [Híbrido]</a>
+     </li>
 
+      <br>
+
+     <li>
+       <input type="checkbox" id="treinos-duolingo">
+       <a href="https://www.duolingo.com/learn?utm_source=pwa_launch" target="_blank">Duolingo - Inglês [Digital] </a>
+     </li>
+
+      <br>
+
+      <li>
+        <input type="checkbox" id="treinos-pessoal">
+        <a href="./Treinos/Treino Pessoal/Quadro.png" target="_blank">Treino Pessoal [Segundas, Quartas e Sextas]</a>  - <a href="https://www.canva.com/" target="_blank">[Editar]</a> [Híbrido] 
+      </li>
+          
+      <br>
+          
+      <li>
+        <input type="checkbox" id="treinos-karate">
+        <a href="./Treinos/Projeto-Agita-Petropolis-Karate/" target="_blank">Projeto Agita Petrópolis Karatê [Quartas e Sextas 18h00]</a> [Físico]
+      </li>
+        
   </ul>
 </div>
 
@@ -126,9 +159,9 @@
   <h2 class="text-xl text-center font-semibold text-green-600 mb-4"><a href="./Trabalhos/+/" target="_blank"># Trabalhos</a></h2>
   <ul class="space-y-5 text-gray-700">
 
-        <li><a href="https://www.canva.com/" target="_blank">Canva - Todas as Contas [Digital] </a></li>
-        <br>
-        <li><a href="https://seller.shopee.com.br/" target="_blank">Shopee - Conta ExtrAds [Híbrido] </a></li>
+      <li><input type="checkbox" id="trabalhos-shopee">
+         <a href="https://seller.shopee.com.br/" target="_blank">Shopee - Conta ExtrAds [Híbrido] </a>
+      </li>
 
   </ul>
 </div>
@@ -152,6 +185,37 @@
       icon.textContent = "▲";
     }
   }
+</script>
+
+  <!-- Script Check Box-->
+
+   <script>
+    // Seleciona todas as caixas de seleção da página
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+
+    // Função para salvar o estado de uma checkbox no localStorage
+    function saveCheckboxState(event) {
+        const checkbox = event.target;
+        localStorage.setItem(checkbox.id, checkbox.checked);
+    }
+
+    // Função para carregar o estado salvo no localStorage
+    function loadCheckboxState() {
+        checkboxes.forEach(checkbox => {
+            const savedState = localStorage.getItem(checkbox.id);
+            if (savedState !== null) {
+                checkbox.checked = (savedState === 'true');
+            }
+        });
+    }
+
+    // Adiciona um "ouvinte" para cada caixa de seleção para salvar o estado quando for alterado
+    checkboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', saveCheckboxState);
+    });
+
+    // Chama a função para carregar o estado assim que a página é carregada
+    window.addEventListener('load', loadCheckboxState);
 </script>
 
 </body>
