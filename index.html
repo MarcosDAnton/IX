@@ -185,35 +185,6 @@
 
   <!-- Script Check Box-->
 
-   <script>
-    // Seleciona todas as caixas de seleção da página
-    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
-
-    // Função para salvar o estado de uma checkbox no localStorage
-    function saveCheckboxState(event) {
-        const checkbox = event.target;
-        localStorage.setItem(checkbox.id, checkbox.checked);
-    }
-
-    // Função para carregar o estado salvo no localStorage
-    function loadCheckboxState() {
-        checkboxes.forEach(checkbox => {
-            const savedState = localStorage.getItem(checkbox.id);
-            if (savedState !== null) {
-                checkbox.checked = (savedState === 'true');
-            }
-        });
-    }
-
-    // Adiciona um "ouvinte" para cada caixa de seleção para salvar o estado quando for alterado
-    checkboxes.forEach(checkbox => {
-        checkbox.addEventListener('change', saveCheckboxState);
-    });
-
-    // Chama a função para carregar o estado assim que a página é carregada
-    window.addEventListener('load', loadCheckboxState);
-</script>
-
 <script>
     // Seleciona todas as caixas de seleção da página
     const checkboxes = document.querySelectorAll('input[type="checkbox"]');
