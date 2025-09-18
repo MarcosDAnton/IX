@@ -30,10 +30,6 @@
 
 <br><br><br>
 
-<p class="text-center">OBS: Desmarcar tudo no fim do dia!</p>
-
-<br>
-
 
 
 <!--======================================================================== SESSÕES =================================================================== -->
@@ -216,6 +212,59 @@
 
     // Chama a função para carregar o estado assim que a página é carregada
     window.addEventListener('load', loadCheckboxState);
+</script>
+
+<script>
+    // Seleciona todas as caixas de seleção da página
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    const lastResetDateKey = 'lastResetDate';
+
+    // Função para salvar o estado de uma checkbox no localStorage
+    function saveCheckboxState(event) {
+        const checkbox = event.target;
+        localStorage.setItem(checkbox.id, checkbox.checked);
+    }
+
+    // Função para carregar o estado salvo no localStorage
+    function loadCheckboxState() {
+        checkboxes.forEach(checkbox => {
+            const savedState = localStorage.getItem(checkbox.id);
+            if (savedState !== null) {
+                checkbox.checked = (savedState === 'true');
+            }
+        });
+    }
+
+    // Função para resetar as caixas de seleção e a data de reset
+    function resetCheckboxes() {
+        checkboxes.forEach(checkbox => {
+            checkbox.checked = false;
+        });
+        // Limpa o estado salvo no localStorage
+        localStorage.clear();
+        // Salva a data atual como a data do último reset
+        const today = new Date().toLocaleDateString();
+        localStorage.setItem(lastResetDateKey, today);
+    }
+
+    // Adiciona um "ouvinte" para cada caixa de seleção para salvar o estado quando for alterado
+    checkboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', saveCheckboxState);
+    });
+
+    // Função principal que é executada ao carregar a página
+    window.addEventListener('load', () => {
+        const lastResetDate = localStorage.getItem(lastResetDateKey);
+        const today = new Date().toLocaleDateString();
+
+        // Se a data do último reset for diferente da data atual, resete as caixas
+        if (lastResetDate !== today) {
+            resetCheckboxes();
+        } else {
+            // Caso contrário, carregue o estado salvo
+            loadCheckboxState();
+        }
+    });
 </script>
 
 </body>
