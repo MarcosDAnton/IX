@@ -1,3 +1,3 @@
-<img src="./+/lunix-removebg-preview.png" width="300">
+<img src="./-IX-/IX.png" width="290px">
 
-Esta pasta está destinada a conteúdos de trabalhos, estudos e treinamentos físicos e digitais sobre qualquer coisa.
+IX é a plataforma que visa organizar os meus registros de pesquisas, feitos e relatos por quaisquer mídias e dispositivos sobre as sessões de estudos, treinos e trabalhos com conteúdos sobre qualquer coisa.
